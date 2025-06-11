@@ -15,15 +15,14 @@ async function fetchShipments() {
 
         console.log('Kapott válasz:', data);
 
-        // Ha a válasz egy tömb (pl. [ {...}, {...} ])
         if (Array.isArray(data)) {
             renderShipments(data);
         }
-        // Ha a válasz objektum és van benne 'data' kulcs (pl. { data: [ ... ] })
+
         else if (Array.isArray(data.data)) {
             renderShipments(data.data);
         }
-        // Egyéb esetben figyelmeztetés
+
         else {
             console.warn('Ismeretlen válaszformátum:', data);
         }
