@@ -1,0 +1,48 @@
+<!-- /*
+* File: index.html
+* Author: Nagy Bianka
+* Copyright: 2025, Nagy Bianka
+* Group: Szoft I-N
+* Date: 2025.06.11.
+* Github: https://github.com/Bianka-9/
+* Licenc: MIT
+*/ -->
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hajórakományok</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>Hajórakományok</h1>
+    <table id="shipmentsTable">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Rakomány azonosítója</th>
+                <th>Címzett</th>
+                <th>Célváros</th>
+                <th>Feladás dátuma</th>
+                <th>Érkezés dátuma</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <button onclick="toggleAbout()">Névjegy</button>
+    <div id="overlay" onclick="toggleAbout()"></div>
+
+    <div id="about" style="display:none">
+        <h2>Hajószállítmányok névjegye</h2>
+        <p>A feladat megoldását készítette: Nagy Bianka</p>
+        <p>Csoport: SZOFT I-N</p>
+        <p>Dátum: 2025.06.11</p>
+      </div>
+  
+    
+    
+</body>
+<script src="script.js"></script>
+</html>
